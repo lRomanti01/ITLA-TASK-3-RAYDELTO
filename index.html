@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda multicapas</title>
+    <link rel="stylesheet" href="/Stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>Agenda multicapas</div>
+    </header>
+    <div class="agenda-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+        <tbody id="data-body">
+          <!-- Los datos se agregarán aquí desde JavaScript -->
+        </tbody>
+      </table>
+      <div class="form-container">
+        <form id="form">
+          <div>
+            <label class="form-item">Nombre</label>
+            <input class="form-item" type="text" id="nombre" />
+          </div>
+          <div>
+            <label class="form-item">Apellido</label>
+            <input class="form-item" type="text" id="apellido" />
+          </div>
+          <div>
+            <label class="form-item">Numero</label>
+            <input class="form-item" type="text" id="numero" />
+          </div>  
+
+          <button type="submit">Agregar</button>
+        </form>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
